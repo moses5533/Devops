@@ -7,8 +7,5 @@ WORKDIR /app
 # Copy the local code to the container
 COPY . .
 
-# Install dependencies
-RUN pip install --no-cache-dir -r requirements.txt
-
 # Set the command to run when the container starts
 CMD ["python", "hello.py"]
